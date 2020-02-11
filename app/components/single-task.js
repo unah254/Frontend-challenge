@@ -1,7 +1,5 @@
-import Component from '@ember/component';
-import { tagName } from '@ember-decorators/component';
+import Component from '@glimmer/component';
 
-export default 
-@tagName('')
-class SingleTaskComponent extends Component {
+export default
+  class SingleTaskComponent extends Component {
 }

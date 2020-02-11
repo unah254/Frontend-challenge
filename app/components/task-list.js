@@ -1,7 +1,5 @@
-import Component from '@ember/component';
-import { tagName } from '@ember-decorators/component';
+import Component from '@glimmer/component';
 
 export default
-@tagName('')
-class TaskListComponent extends Component {
+  class TaskListComponent extends Component {
 }
