@@ -1,4 +1,11 @@
-<h1>Task List</h1>
+<div class = "container">
+  <nav class="navbar">
+  <div class="all_tasks">All Tasks</div>
+  <div class="navbar-task">
+    Completed Tasks {{this.completedTasks}}
+  </div>
+  <div class="img_right">{{svg-jar "avat"}}</div>
+</nav>
 <h4>Pinned Task</h4>
 {{#if this.pinnedTask}}
   <div class="list-group-item {{if this.pinnedTask.isComplete "is-complete"}}">
@@ -26,9 +33,4 @@
 {{/if}}
 <h4>Other Tasks</h4>
 <TaskList @tasks={{this.model}} />
-
-<nav class="navbar navbar-light bg-light">
-  <span class="navbar-text">
-    <strong>Completed Tasks:</strong> {{this.completedTasks}}
-  </span>
-</nav>
+</div>
